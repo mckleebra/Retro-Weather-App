@@ -2,6 +2,8 @@ html {
   width: 70%;
   margin: 0 auto;
   display: block;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-3/sym253.ani),
+    url(https://cur.cursors-4u.net/symbols/sym-3/sym253.png), auto !important;
 }
 
 #sections-merged {
@@ -105,12 +107,6 @@ p {
   background-color: #e963fe;
 }
 
-/* Start https://www.cursors-4u.com */
-* {
-  cursor: url(https://cur.cursors-4u.net/symbols/sym-3/sym253.ani),
-    url(https://cur.cursors-4u.net/symbols/sym-3/sym253.png), auto !important;
-} /* End https://www.cursors-4u.com */
-
 :root {
   --main-light-color: #d3a9fd;
   --main-background-color: black;
@@ -143,4 +139,7 @@ p {
   top: 85%;
   right: 30%;
   transform: rotate(-40deg);
+}
+a:hover {
+  cursor: pointer;
 }
