@@ -1,0 +1,149 @@
+html {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+body {
+  background-color: aquamarine;
+}
+
+#sections-merged {
+  background-color: #f7cdea;
+  margin: 0;
+  border: 3px outset #f7cdea;
+  min-width: auto;
+  max-width: 450px;
+  float: left;
+  width: 60%;
+  margin: 20px;
+}
+
+.city-name {
+  padding-top: 45px;
+  padding-bottom: 35px;
+  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.city {
+  width: 400px;
+}
+#buttons {
+  font-family: covered by your grace;
+  display: inline-block;
+}
+
+p {
+  list-style-type: none;
+  font-family: inherit;
+  background-color: #f197c4;
+}
+
+#detail {
+  float: right;
+  border: 2px outset #f197c4;
+  background-color: rgb(255, 221, 242);
+  font-size: 13px;
+  width: 15px;
+  height: 20px;
+}
+
+.day-of-week {
+  font-size: 50px;
+  padding-left: 2rem;
+  padding-bottom: 20px;
+  font-family: amatic SC;
+}
+#currentTemp {
+  font-size: 50px;
+}
+
+.cel-fah-convert {
+  margin-bottom: 20px;
+  text-align: center;
+  word-spacing: 50px;
+  font-size: 15px;
+}
+#celsius {
+  background-color: rgb(255, 221, 242);
+  border: 2px outset #f197c4;
+  width: 25%;
+  overflow: hidden;
+}
+#fahrenheit {
+  background-color: rgb(255, 221, 242);
+  border: 2px outset #f197c4;
+  width: 25%;
+  overflow: hidden;
+}
+#humidity-wind-ul {
+  list-style-type: none;
+  padding: 20px;
+  display: block;
+  margin-top: 19px;
+  line-height: 25px;
+  font-size: 30px;
+  float: left;
+  overflow: auto;
+}
+#humid-wind-li {
+  word-spacing: 30px;
+}
+.px-5 {
+  border: 0;
+  margin: 0;
+  background-image: none;
+  padding-top: 0 !important;
+}
+.mx-1 {
+  border: 3px outset #f7cdea;
+  text-align: center;
+  height: 200px;
+  font-size: 35px;
+  line-height: 170%;
+  min-width: 50px;
+  font-family: covered by your grace;
+  background-color: #e963fe;
+}
+
+/* Start https://www.cursors-4u.com */
+* {
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-3/sym253.ani),
+    url(https://cur.cursors-4u.net/symbols/sym-3/sym253.png), auto !important;
+} /* End https://www.cursors-4u.com */
+
+:root {
+  --main-light-color: #d3a9fd;
+  --main-background-color: black;
+}
+
+.box {
+  width: 80vh;
+  height: 68vh;
+  margin-left: 35%;
+  position: relative;
+  display: block;
+}
+
+.dialog-2 {
+  height: 40%;
+  width: 50%;
+  background-color: var(--main-light-color);
+  position: absolute;
+  border-radius: 10%;
+  right: 0;
+}
+
+.right-point {
+  width: 0;
+  height: 0;
+  border-left: 2vh solid transparent;
+  border-right: 2vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 85%;
+  right: 30%;
+  transform: rotate(-40deg);
+}
