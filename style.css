@@ -1,20 +1,41 @@
 html {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   display: block;
   cursor: url(https://cur.cursors-4u.net/symbols/sym-3/sym253.ani),
     url(https://cur.cursors-4u.net/symbols/sym-3/sym253.png), auto !important;
 }
+body {
+  background-image: url("https://a.rgbimg.com/users/x/xy/xymonau/600/mgZP6oI.jpg");
+  background-size: 150%;
+  margin: 0 auto;
+  display: block;
+}
 
 #sections-merged {
   background-color: #f7cdea;
-  margin: 0;
   border: 3px outset #f7cdea;
-  min-width: auto;
-  max-width: 450px;
-  float: left;
-  width: 60%;
-  margin: 20px;
+  width: 50%;
+  display: inline-block;
+}
+
+.fit {
+  height: 40%;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+#humidity-wind {
+  background-color: #f197c4;
+  width: 40%;
+  padding-top: 20px;
+  font-size: 30px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 5%;
+}
+#emoji {
+  font-size: 70px;
 }
 
 .city-name {
@@ -27,7 +48,7 @@ html {
 }
 
 .city {
-  width: 400px;
+  width: 50%;
 }
 #buttons {
   font-family: covered by your grace;
@@ -35,7 +56,6 @@ html {
 }
 
 p {
-  list-style-type: none;
   font-family: inherit;
   background-color: #f197c4;
 }
@@ -54,6 +74,7 @@ p {
   padding-left: 2rem;
   padding-bottom: 20px;
   font-family: amatic SC;
+  overflow: hidden;
 }
 #currentTemp {
   font-size: 50px;
@@ -77,25 +98,27 @@ p {
   width: 25%;
   overflow: hidden;
 }
-#humidity-wind-ul {
-  list-style-type: none;
-  padding: 20px;
-  display: block;
-  margin-top: 19px;
-  line-height: 25px;
-  font-size: 30px;
-  float: left;
-  overflow: auto;
-}
-#humid-wind-li {
-  word-spacing: 30px;
-}
-.px-5 {
+
+.py-5 {
   border: 0;
-  margin: 0;
-  background-image: none;
+  display: block;
+  background-color: rgb(145, 135, 219);
+  max-width: 60%;
   padding-top: 0 !important;
+  margin-top: 3%;
+  border: 3px outset rgb(145, 135, 219);
 }
+.bar {
+  background-color: rgb(109, 94, 222);
+  width: 100%;
+}
+#load {
+  background-color: transparent;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
 .mx-1 {
   border: 3px outset #f7cdea;
   text-align: center;
@@ -104,42 +127,14 @@ p {
   line-height: 170%;
   min-width: 50px;
   font-family: covered by your grace;
-  background-color: #e963fe;
+  background-color: #f197c4;
+}
+.mx-2 {
+  background-color: #6d5ede;
+  margin-left: 0.2rem !important;
+  margin-right: 0.2rem !important;
 }
 
-:root {
-  --main-light-color: #d3a9fd;
-  --main-background-color: black;
-}
-
-.box {
-  width: 80vh;
-  height: 68vh;
-  margin-left: 35%;
-  position: relative;
-  display: block;
-}
-
-.dialog-2 {
-  height: 40%;
-  width: 50%;
-  background-color: var(--main-light-color);
-  position: absolute;
-  border-radius: 10%;
-  right: 0;
-}
-
-.right-point {
-  width: 0;
-  height: 0;
-  border-left: 2vh solid transparent;
-  border-right: 2vh solid transparent;
-  border-top: 10vh solid var(--main-light-color);
-  position: absolute;
-  top: 85%;
-  right: 30%;
-  transform: rotate(-40deg);
-}
 a:hover {
   cursor: pointer;
 }

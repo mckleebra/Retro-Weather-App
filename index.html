@@ -28,7 +28,7 @@
       </span>
     </form>
 
-    <div class="fit">
+    <div class="container fit">
       <div id="sections-merged">
         <p class="system">
           SYSTEM MESSAGE
@@ -46,19 +46,17 @@
           <button id="fahrenheit">Fahrenheit</button>
         </div>
       </div>
-    </div>
-    <div class="box">
-      <div class="dialog-2">
-        <ul id="humidity-wind-ul">
-          <li id="humidity" class="humid-wind-li">Humidity: 50%</li>
-          <br />
-          <li id="wind" class="humid-wind-li">Wind: 5 mp/h</li>
-        </ul>
-        <div class="right-point"></div>
+      <div id="humidity-wind">
+        <h3 id="humidity">Humidity: 10%</h3>
+        <h3 id="wind">Wind: 5 mp/h</h3>
+        <h3 id="emoji">🌧</h3>
       </div>
     </div>
-
     <div class="container px-5 py-5">
+      <div class="bar">
+        <span id="detail-2">X</span>
+      </div>
+      <div id="load">Loading...</div>
       <div class="row">
         <div class="col mx-1">
           <strong>Fri</strong><br />
@@ -75,12 +73,12 @@
           51°F <br />
           <div class="emoji">🌤</div>
         </div>
-        <div class="col mx-1">
+        <div class="col mx-1 mx-2">
           <strong>Mon</strong><br />
           43°F <br />
           <div class="emoji">🌧</div>
         </div>
-        <div class="col mx-1">
+        <div class="col mx-1 mx-2">
           <strong>Tue</strong><br />
           45°F <br />
           <div class="emoji">🌤</div>
@@ -93,6 +91,5 @@
       >
       by McKenzie Brannon
     </footer>
-    <br />
   </body>
 </html>
