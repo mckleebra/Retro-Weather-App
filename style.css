@@ -68,6 +68,10 @@ p {
   width: 15px;
   height: 20px;
 }
+#detail-2 {
+  position: relative;
+  left: 97%;
+}
 
 .day-of-week {
   font-size: 50px;
@@ -107,6 +111,12 @@ p {
   padding-top: 0 !important;
   margin-top: 3%;
   border: 3px outset rgb(145, 135, 219);
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 .bar {
   background-color: rgb(109, 94, 222);
@@ -128,6 +138,7 @@ p {
   min-width: 50px;
   font-family: covered by your grace;
   background-color: #f197c4;
+  overflow: hidden;
 }
 .mx-2 {
   background-color: #6d5ede;
