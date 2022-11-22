@@ -35,8 +35,8 @@ body {
   margin-left: 5%;
   border: 3px outset #f9dcf2;
 }
-.top-emoji {
-  font-size: 60px;
+#top-emoji {
+  height: 100px;
 }
 
 .city-name {
@@ -94,6 +94,7 @@ p {
   overflow: hidden;
   padding-bottom: 20px;
 }
+
 #city-subject-name {
   font-size: 50px;
   overflow: hidden;

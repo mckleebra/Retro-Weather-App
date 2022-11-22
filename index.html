@@ -11,6 +11,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Retro Weather App</title>
   </head>
@@ -40,7 +41,7 @@
         </h1>
         <span class="day-week-time">Thursday 7:00am</span>
 
-        <h2 id="currentTemp">49°F</h2>
+        <h2 id="currentTemp">49°</h2>
 
         <div class="cel-fah-convert">
           <button id="celsius">Celsius</button>
@@ -48,7 +49,8 @@
         </div>
       </div>
       <div id="humidity-wind">
-        <h3 class="top-emoji">🌧</h3>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" id="top-emoji" />
+        <h3 id="description">Rain</h3>
         <h3 id="humidity">Humidity: 10%</h3>
         <h3 id="wind">Wind: 5 mp/h</h3>
       </div>
@@ -93,5 +95,6 @@
       >
       by McKenzie Brannon
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
