@@ -23,8 +23,9 @@ newDate.innerHTML = fullDate;
 
 function showTemperature(response) {
   document.querySelector("#city-subject-name").innerHTML = response.data.name;
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#currentTemp").innerHTML =
-    Math.round(response.data.main.temp) + "°";
+    Math.round(celsiusTemp) + "°C";
 
   document.querySelector("#humidity").innerHTML =
     "Humidity: " + response.data.main.humidity + "%";
@@ -43,7 +44,7 @@ function showTemperature(response) {
 
 function searchCity(city) {
   let apiKey = "c5f0e59acac64258bb92ed027d20c68f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
 function Submit(event) {
@@ -63,7 +64,7 @@ function findLocation(position) {
   let Key = "c5f0e59acac64258bb92ed027d20c68f";
   let lat = position.coords.latitude;
   let long = position.coords.longitude;
-  let Url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${Key}`;
+  let Url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${Key}`;
 
   axios.get(Url).then(showTemperature);
 }
@@ -74,3 +75,26 @@ function current(event) {
 
 let locationButton = document.querySelector("#currentLocation");
 locationButton.addEventListener("click", current);
+
+// Conversion
+
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let temperatureDisplayed = document.querySelector("#currentTemp");
+  let fahrenheitFormula = (celsiusTemp * 9) / 5 + 32;
+  temperatureDisplayed.innerHTML = `${Math.round(fahrenheitFormula)}°F`;
+}
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let temperatureDisplayed = document.querySelector("#currentTemp");
+  temperatureDisplayed.innerHTML = `${Math.round(celsiusTemp)}°C`;
+}
+
+let celsiusTemp = null;
+
+let fahrenheitButton = document.querySelector("#fahrenheit");
+fahrenheitButton.addEventListener("click", displayFahrenheit);
+
+let celsiusButton = document.querySelector("#celsius");
+celsiusButton.addEventListener("click", displayCelsius);
