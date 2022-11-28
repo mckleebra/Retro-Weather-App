@@ -6,8 +6,8 @@ html {
     url(https://cur.cursors-4u.net/symbols/sym-3/sym253.png), auto !important;
 }
 body {
-  background-image: url("https://a.rgbimg.com/users/x/xy/xymonau/600/mgZP6oI.jpg");
-  background-size: 150%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/334/278/non_2x/abstract-neon-background-with-glitch-effect-free-vector.jpg");
+  background-size: 130%;
   margin: 0 auto;
   display: block;
 }
@@ -26,7 +26,7 @@ body {
   width: 80%;
 }
 #humidity-wind {
-  background-color: #f197c4;
+  background-image: linear-gradient(to bottom right, #9187db, #f7cdea, #d3c4f2);
   width: 40%;
   padding-top: 20px;
   font-size: 30px;
@@ -34,9 +34,11 @@ body {
   text-align: center;
   margin-left: 5%;
   border: 3px outset #f9dcf2;
+  font-family: audiowide;
+  color: rgb(79, 69, 160);
 }
 #top-emoji {
-  height: 100px;
+  height: 120px;
 }
 
 .city-name {
@@ -185,10 +187,13 @@ p {
 
 a:hover {
   cursor: pointer;
+  color: #f9dcf2;
 }
 footer {
   padding-left: 1rem;
+  color: #f9dcf2;
 }
 #description {
   font-size: 40px;
+  font-family: audiowide;
 }
