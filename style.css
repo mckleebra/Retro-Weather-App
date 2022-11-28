@@ -49,9 +49,17 @@ body {
 }
 #submit-form {
   background-color: rgb(145, 135, 219);
+  transition: 0.4s;
+}
+#submit-form:hover {
+  background-color: #f197c4;
 }
 #currentLocation {
   background-color: rgb(145, 135, 219);
+  transition: 0.4s;
+}
+#currentLocation:hover {
+  background-color: #f197c4;
 }
 .city {
   width: 50%;
