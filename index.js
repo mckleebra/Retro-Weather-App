@@ -98,3 +98,26 @@ fahrenheitButton.addEventListener("click", displayFahrenheit);
 
 let celsiusButton = document.querySelector("#celsius");
 celsiusButton.addEventListener("click", displayCelsius);
+
+//Forecast
+function displayForecast() {
+  let elementForecast = document.querySelector("#forecast");
+
+  let forecastHTML = ` <div class="row">`;
+  let days = ["Wed", "Thurs", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+   <div class="col mx-1">
+            <strong>${day}</strong><br />
+            50°F <br />
+            <div class="emoji">🌤</div>
+          </div>
+`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  elementForecast.innerHTML = forecastHTML;
+}
+
+displayForecast();
