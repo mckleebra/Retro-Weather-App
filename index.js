@@ -1,4 +1,3 @@
-//Day of week & time
 let currentDate = new Date();
 let minutes = currentDate.getMinutes();
 
@@ -19,7 +18,36 @@ let fullDate = dayName + " " + hours + ":" + minutes;
 let newDate = document.querySelector(".day-week-time");
 newDate.innerHTML = fullDate;
 
-//City and Weather
+function displayForecast(response) {
+  let forecast = response.data.daily;
+  let elementForecast = document.querySelector("#forecast");
+
+  let forecastHTML = ` <div class="row">`;
+
+  forecast.forEach(function (forecastDay) {
+    forecastHTML =
+      forecastHTML +
+      `
+   <div class="col mx-1">
+            <strong>${forecastDay.dt}</strong><br />
+            ${forecastDay.temp.max} <br />
+             <img
+            src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+            class="emoji"
+          />
+          </div>
+`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  elementForecast.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "97bed167ec49bff56e6c1b63daef9c86";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function showTemperature(response) {
   document.querySelector("#city-subject-name").innerHTML = response.data.name;
@@ -40,6 +68,7 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -98,26 +127,3 @@ fahrenheitButton.addEventListener("click", displayFahrenheit);
 
 let celsiusButton = document.querySelector("#celsius");
 celsiusButton.addEventListener("click", displayCelsius);
-
-//Forecast
-function displayForecast() {
-  let elementForecast = document.querySelector("#forecast");
-
-  let forecastHTML = ` <div class="row">`;
-  let days = ["Wed", "Thurs", "Fri"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
-   <div class="col mx-1">
-            <strong>${day}</strong><br />
-            50°F <br />
-            <div class="emoji">🌤</div>
-          </div>
-`;
-  });
-  forecastHTML = forecastHTML + `</div>`;
-  elementForecast.innerHTML = forecastHTML;
-}
-
-displayForecast();
