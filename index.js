@@ -39,8 +39,8 @@ function displayForecast(response) {
         `
    <div class="col mx-1">
             <strong>${formatDay(forecastDay.dt)}</strong><br />
-            Hi: ${Math.round(forecastDay.temp.max)}°C <br />
-            Lo: ${Math.round(forecastDay.temp.min)}°C
+            Hi: ${Math.round(forecastDay.temp.max)}° <br />
+            Lo: ${Math.round(forecastDay.temp.min)}°
              <img
             src="http://openweathermap.org/img/wn/${
               forecastDay.weather[0].icon
