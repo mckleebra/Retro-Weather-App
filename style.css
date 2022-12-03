@@ -13,8 +13,8 @@ body {
 }
 
 #sections-merged {
-  background-color: #f7cdea;
-  border: 3px outset #f7cdea;
+  background-color: #f197c4;
+  border: 3px outset #f197c4;
   width: 50%;
   display: inline-block;
 }
@@ -26,16 +26,16 @@ body {
   width: 80%;
 }
 #humidity-wind {
-  background-image: linear-gradient(to bottom right, #9187db, #f7cdea, #d3c4f2);
+  background-image: linear-gradient(to bottom right, #8547d8, #af42a1, #4e3dcc);
   width: 40%;
   padding-top: 20px;
   font-size: 30px;
   display: inline-block;
   text-align: center;
-  margin-left: 5%;
-  border: 3px outset #f9dcf2;
+  margin-left: 8%;
+  border: 3px outset #8547d8;
   font-family: audiowide;
-  color: rgb(79, 69, 160);
+  color: #f197c4;
 }
 #top-emoji {
   height: 120px;
@@ -50,18 +50,20 @@ body {
   text-align: center;
 }
 #submit-form {
-  background-color: rgb(145, 135, 219);
+  background-color: #4e3dcc;
+  border: 2px outset #4e3dcc;
   transition: 0.4s;
 }
 #submit-form:hover {
-  background-color: #f197c4;
+  background-color: #ab43a8;
 }
 #currentLocation {
-  background-color: rgb(145, 135, 219);
+  background-color: #4e3dcc;
+  border: 2px outset #4e3dcc;
   transition: 0.4s;
 }
 #currentLocation:hover {
-  background-color: #f197c4;
+  background-color: #ab43a8;
 }
 .city {
   width: 50%;
@@ -72,20 +74,21 @@ body {
 
 p {
   font-family: inherit;
-  background-color: #f197c4;
+  background-color: #b645a5;
 }
 .system {
-  color: #f7cdea;
+  color: #f197c4;
   padding-left: 2px;
 }
 #detail {
   float: right;
-  border: 2px outset #f197c4;
-  background-color: rgb(255, 221, 242);
+  border: 2px outset #b645a5;
+  background-color: #edb1cf;
   font-size: 13px;
   width: 15px;
+  padding-left: 0.1rem;
   height: 20px;
-  color: rgb(79, 69, 160);
+  color: #221557;
 }
 #detail-2 {
   position: relative;
@@ -111,7 +114,7 @@ p {
   padding-left: 1rem;
   overflow: hidden;
   font-family: audiowide;
-  color: rgb(79, 69, 160);
+  color: #221557;
 }
 #currentTemp {
   font-size: 50px;
@@ -119,7 +122,7 @@ p {
   overflow: hidden;
   padding-bottom: 20px;
   font-family: audiowide;
-  color: rgb(79, 69, 160);
+  color: #221557;
 }
 
 #city-subject-name {
@@ -127,7 +130,7 @@ p {
   overflow: hidden;
   padding-left: 1rem;
   font-family: audiowide;
-  color: rgb(79, 69, 160);
+  color: #221557;
 }
 
 .cel-fah-convert {
@@ -137,18 +140,18 @@ p {
   font-size: 15px;
 }
 #celsius {
-  background-color: rgb(255, 221, 242);
+  background-color: #edb1cf;
   border: 2px outset #f197c4;
   width: 25%;
   overflow: hidden;
-  color: rgb(79, 69, 160);
+  color: #221557;
 }
 #fahrenheit {
-  background-color: rgb(255, 221, 242);
+  background-color: #edb1cf;
   border: 2px outset #f197c4;
   width: 25%;
   overflow: hidden;
-  color: rgb(79, 69, 160);
+  color: #221557;
 }
 
 .py-5 {
@@ -187,6 +190,7 @@ p {
   min-width: 50px;
   background-color: #af42a1;
   overflow: hidden;
+  color: #221557;
 }
 
 a:hover {
